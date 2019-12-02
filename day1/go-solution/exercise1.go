@@ -8,16 +8,8 @@ import (
 	"strconv"
 )
 
-// func main() {
-// 	input, err := ioutil.ReadFile("./input.txt")
-// 	check(err)
-// 	data := strings.Split(string(input), "\n")
-// 	totalFuel := totalFuelNeeded(data)
-// 	fmt.Println(totalFuel)
-// }
-
 func main() {
-	file, err := os.Open("./input.txt")
+	file, err := os.Open("../input.txt")
 	check(err)
 	defer file.Close()
 
