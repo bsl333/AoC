@@ -22,6 +22,10 @@ func main() {
 		totalFuel += fuelNeeded(mass)
 	}
 
+	if err := scanner.Err(); err != nil {
+		check(err)
+	}
+
 	fmt.Println(totalFuel)
 }
 
