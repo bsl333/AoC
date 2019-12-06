@@ -33,6 +33,7 @@ func main() {
 	}
 	t := time.Now()
 	fmt.Println("TIME", t.Sub(start))
+	fmt.Println(time.Since(start))
 }
 
 func runCommands(c1 int, c2 int, commands []int) int {

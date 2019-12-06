@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 const (
 	min = 256310
@@ -8,6 +11,7 @@ const (
 )
 
 func main() {
+	start := time.Now()
 	validPasswordCount := 0
 	validPasswordCountAdv := 0
 	for i := min; i <= max; i++ {
@@ -21,6 +25,7 @@ func main() {
 
 	fmt.Println("part 1:", validPasswordCount)
 	fmt.Println("part 2:", validPasswordCountAdv)
+	fmt.Println(time.Since(start))
 
 }
 
